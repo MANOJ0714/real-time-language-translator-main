@@ -39,7 +39,6 @@ def main_process(output_placeholder, from_language, to_language):
             spoken_text = rec.recognize_google(audio, language='{}'.format(from_language))
             output_placeholder.text("Translating...")
             translated_text = translator_function(spoken_text, from_language, to_language)
-            print(translated_text)
             text_to_voice(translated_text.text, to_language)
         except Exception as e:
             print(e)
