@@ -9,7 +9,7 @@ from googletrans import LANGUAGES, Translator
 isTranslateOn = False
 
 translator = Translator() 
-pygame.mixer.init() 
+# pygame.mixer.init() 
 
 language_mapping = {name: code for code, name in LANGUAGES.items()}
 
